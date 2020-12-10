@@ -6,17 +6,17 @@
 
 	<center>
 	<form action="/submit" id="textform" method="post">
-	    <textarea name="content" rows="4" cols="50" placeholder="Just write whatever you want to..."></textarea>
+	    <textarea name="content" rows="4" cols="50" placeholder="Values to block..."></textarea>
 	    <br>
-	    <input type="text" name="author" placeholder="Your name">
-	    <input type="submit" value="Post">
+	    <input type="text" name="author" placeholder="Name">
+	    <input type="submit" value="Submit block">
 	</form>
 	</center>
 
 	<br>
 
-	<a href="{{node_address}}/mine" target="_blank"><button>Request to mine</button></a>
-	<a href="/"><button>Resync</button></a>
+	<a href="{{node_address}}/mine" target="_blank"><button>Mine block</button></a>
+	<a href="/"><button>Refresh</button></a>
 
 	<div style="margin: 20px;">
 
@@ -37,6 +37,9 @@
 	{% endfor %}
 
 	<style>
+	body {
+	background-color: gray;
+	}
 		.post_box {
 		    background: #fff;
 		    padding: 12px 0px 0px 12px;
